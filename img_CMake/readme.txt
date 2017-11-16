@@ -12,7 +12,7 @@ make
 
 Result
 
-By now you should have an executable. You just have to run it giving an image location as an argument, i.e.:
+By now you should have an executable. You just have to run it, i.e.:
 
 -------------------------------------
 sudo ./DisplayImage
