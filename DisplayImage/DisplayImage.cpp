@@ -3,17 +3,14 @@
 using namespace cv;
 int main(int argc, char** argv )
 {
-	Mat image,bw_img;
+	Mat image;
 	image = imread( "/home/yan/thiri.jpg", 1 );
 	if ( !image.data ) {
 		printf("No image data \n");
 		return -1;
 	}
-	namedWindow("Original Image", WINDOW_AUTOSIZE );
-	imshow("Original Image", image);
-	cvtColor(image, bw_img, COLOR_BGR2GRAY);
-	namedWindow("BW Image", WINDOW_AUTOSIZE );
-	imshow("BW Image", bw_img);
+	namedWindow("Display Image", WINDOW_AUTOSIZE );
+	imshow("Display Image", image);
 	waitKey(0);
 	return 0;
 }
